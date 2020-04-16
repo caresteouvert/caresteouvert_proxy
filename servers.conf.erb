@@ -11,3 +11,10 @@ server {
 
     return 301 https://www.caresteouvert.fr/;
 }
+
+server {
+    server_name sigueabierto.openstreetmap.es;
+    listen <%= ENV['PORT'] %>;
+
+    return 301 https://www.sigueabierto.es/;
+}
