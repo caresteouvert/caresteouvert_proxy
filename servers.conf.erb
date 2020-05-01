@@ -18,3 +18,10 @@ server {
 
     return 301 https://www.sigueabierto.es/;
 }
+
+server {
+    server_name www.ezosala.org;
+    listen <%= ENV['PORT'] %>;
+
+    return 301 https://ezosala.org/;
+}
